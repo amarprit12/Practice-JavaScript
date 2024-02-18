@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<script>
+    let promise1 = new Promise(function (resolve, reject) {
+  let goodDeveloper = false;
+  if (goodDeveloper) {
+    setTimeout(() => {
+      resolve("nice");
+    });
+  } else {
+    reject("try again");
+  }
+});
+console.log("promise: ", promise1);
+</script>
+</body>
+</html>
